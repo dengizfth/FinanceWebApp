@@ -1,0 +1,135 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="card">
+    <div class="card-body">
+        <div class="border p-4 rounded">
+            <div class="text-center">
+                <h3 class="">Sign Up/Register</h3>
+                <p>
+                    Already have an account ? @Html.ActionLink("Login in here", "Login", "Admin")
+                </p>
+            </div>
+            <div class="d-grid">
+                <a class="btn my-4 shadow-sm btn-light" href="javascript:;">
+                    <span class="d-flex justify-content-center align-items-center">
+                        <img class="me-2" src="~/Content/assets/images/icons/search.svg" width="16" alt="Image Description">
+                        <span>Sign Up with Google</span>
+                    </span>
+                </a> <a href="javascript:;" class="btn btn-light"><i class="bx bxl-facebook"></i>Sign Up with Facebook</a>
+            </div>
+            <div class="login-separater text-center mb-4">
+                <span>OR SIGN UP WITH EMAIL</span>
+                <hr />
+            </div>
+            <div class="form-body">
+
+                <div class="row g-3">
+
+                    @using (Html.BeginForm())
+                    {
+
+                        <div class="col-12 mb-3">
+                            <label for="FullName" class="form-label">Full Name</label>
+                            @Html.TextBox("FullName", null, new { @class = "form-control" , required = "required", type = "text", placeholder = "Full Name" })
+
+                        </div>
+                        <hr />
+                        <div class="col-12">
+                            <label for="Email" class="form-label">Email Address</label>
+                            @Html.TextBox("Email", null, new { @class = "form-control", required = "required", type = "email", placeholder = "Email Address" })
+
+                        </div>
+                        <hr />
+
+                        <div class="col-12">
+                            <label for="Phone" class="form-label">Phone Number</label>
+                            @Html.TextBox("Phone", null, new { @class = "form-control", required = "required", type = "text", placeholder = "Phone Number" })
+                        </div>
+                        <hr />
+
+                        <div class="col-12">
+                            <label for="Mobile" class="form-label">Mobile Number</label>
+                            @Html.TextBox("Mobile", null, new { @class = "form-control", required = "required", type = "text", placeholder = "Mobile Number" })
+                        </div>
+                        <hr />
+                        <div class="col-12">
+                            <label for="Password" class="form-label">Password </label>
+                            @Html.TextBox("Password", null, new { @class = "form-control", required = "required", type = "password", placeholder = "Password" })
+                        </div>
+                        <hr />
+                        <div class="col-12">
+                            <label for="passwordr" class="form-label">Password Repeat</label>
+                            @Html.TextBox("passwordr", null, new { @class = "form-control", required = "required", type = "password", placeholder = "Password Repeat" })
+                        </div>
+                        <hr />
+                        <div class="col-12">
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-light"><i class='bx bx-user'></i>Sign up</button>
+                            </div>
+                        </div>
+
+                    }
+                </div>
+
+
+
+                    @*
+                        <form class="row g-3">
+                        <div class="col-sm-6">
+                            <label for="inputFirstName" class="form-label">First Name</label>
+                            <input type="email" class="form-control" id="inputFirstName" placeholder="Jhon">
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="inputLastName" class="form-label">Last Name</label>
+                            <input type="email" class="form-control" id="inputLastName" placeholder="Deo">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputEmailAddress" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="inputEmailAddress" placeholder="example@user.com">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputChoosePassword" class="form-label">Password</label>
+                            <div class="input-group" id="show_hide_password">
+                                <input type="password" class="form-control border-end-0" id="inputChoosePassword" value="12345678" placeholder="Enter Password">
+                                <a href="javascript:;" class="input-group-text bg-transparent"><i class='bx bx-hide'></i></a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputSelectCountry" class="form-label">Country</label>
+                            <select class="form-select" id="inputSelectCountry" aria-label="Default select example">
+                                <option selected>India</option>
+                                <option value="1">United Kingdom</option>
+                                <option value="2">America</option>
+                                <option value="3">Dubai</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
+                                <label class="form-check-label" for="flexSwitchCheckChecked">I read and agree to Terms & Conditions</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-light"><i class='bx bx-user'></i>Sign up</button>
+                            </div>
+                        </div>
+                    </form>
+                        
+                        
+                        *@
+
+
+
+                </div>
+        </div>
+    </div>
+</div>
+
+
+
