@@ -53,8 +53,6 @@ namespace FinanceWebAppIskur.Controllers
         [HttpPost]
         public ActionResult Register(User user, string passwordr)
         {
-
-
             if (user.Password == passwordr)
             {
 
@@ -63,22 +61,26 @@ namespace FinanceWebAppIskur.Controllers
 
 
             }
+            return RedirectToAction("Login");
+        }
 
 
-
-
-
-
-
+        // Adminden Girişten sonra ekranda ilk gözükücek sayfa
+        [HttpGet]
+        public ActionResult AdminPanelDefault()
+        {
 
             return View();
         }
 
+       
 
 
+        public ActionResult CustomerAdmin()
+        {
 
-
-
+            return View();
+        }
 
     }
 }
