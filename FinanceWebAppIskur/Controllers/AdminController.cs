@@ -39,8 +39,14 @@ namespace FinanceWebAppIskur.Controllers
         [HttpPost]
         public ActionResult Login(User user)
         {
-                   
-            return View();
+            var userLogin = db.User.FirstOrDefault(x => x.Id == user.Id && x.Email == user.Email);
+
+            if (true)
+            {
+
+            }
+
+            return RedirectToAction("Login");
         }
 
 
@@ -71,10 +77,7 @@ namespace FinanceWebAppIskur.Controllers
         {
 
             return View();
-        }
-
-       
-
+        }    
 
         public ActionResult CustomerAdmin()
         {

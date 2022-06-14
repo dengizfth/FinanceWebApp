@@ -400,7 +400,10 @@ a {
 	background: rgb(255 255 255 / 15%);
 
 }
-
+/*.atag:hover, .atag a:hover, .atag.parent:hover {
+	background: black !important;
+}
+*/
 .menu-label {
 
 	padding: 20px 15px 5px 5px;

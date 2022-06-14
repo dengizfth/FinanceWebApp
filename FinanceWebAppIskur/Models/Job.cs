@@ -33,8 +33,6 @@ namespace FinanceWebAppIskur.Models
         public User user { get; set; }
 
 
-        public int CustomerId { get; set; }
-        public Customer Customer { get; set; }
 
 
     }

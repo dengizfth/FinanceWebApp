@@ -18,6 +18,7 @@ namespace FinanceWebAppIskur.Models
 
         public bool Delete { get; set; }
 
+        
         // Foreing Key :
         public int UserId { get; set; }
         public User user { get; set; }

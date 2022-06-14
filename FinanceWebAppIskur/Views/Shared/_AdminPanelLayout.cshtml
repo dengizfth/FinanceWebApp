@@ -54,8 +54,17 @@
                         <div class="menu-title">Müşteri İşlemleri</div>
                     </a>
                     <ul>
-                        <li>
-                            @Html.ActionLink(" Bireysel Müşteri", "CustomerAdmin", "Admin", new { @class = "lni lni-target-customer mr-1" })
+                        
+                        <li >
+                            <div class="d-flex flex-row ps-3 atag w-100">
+                                <div class=" mt-2">
+                                    <i class="bx bx-right-arrow-alt"></i>
+                                </div>
+                                <div class="">
+                                    @Html.ActionLink(" Bireysel Müşteri", "CustomerAdmin", "Admin", new { @class = "mr-1" })
+                                </div>
+
+                            </div>
                         </li>
                        
                         <li>
@@ -135,7 +144,7 @@
                     </ul>
                 </li>
 
-                </li>
+               
                 <li>
                     <a href="javascript:;" class="has-arrow">
                         <div class="parent-icon">
